@@ -1,0 +1,50 @@
+{
+  "name": "kids-tracko",
+  "version": "1.0.0",
+  "description": "KidsTrack is an organization that develops wearables like watches that are worn by kids and they contain GPS which transmits the location information every 2 mins. These are orderedby parents to track their children’s location. Typically, the parents order the watches and putthem on their kids and enable tracking. In a web portal, the parents look at their locationmovements periodically. Also, the parents can set a geofence which if the kid breaches, anotification is triggered to ensure the kid does not go off limits. E.g.: The geo fence could bea society limit. So, if the kid tries to go off limits of society, parents are notified andimmediately they can act.",
+  "scripts": {
+    "start": "node -r dotenv/config ./bin/www",
+    "dev": "nodemon -r dotenv/config ./bin/www",
+    "debug": "DEBUG=kids-tracko:* nodemon ./bin/www",
+    "debug-nomon": "DEBUG=kids-tracko:* node ./bin/www",
+    "debug-inspect": "DEBUG=kids-tracko:* node inspect ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/hiteshsalvi/kids-tracko.git"
+  },
+  "engines": {
+    "node": "10.x.x"
+  },
+  "keywords": [
+    "kids",
+    "tracko",
+    "kidstracko",
+    "smartwatch",
+    "tracking"
+  ],
+  "author": "Hitesh Salavi <hiteshsalavi@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/hiteshsalvi/kids-tracko/issues"
+  },
+  "homepage": "https://gitlab.com/hiteshsalvi/kids-tracko#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-ensure-login": "^0.1.1",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-session": "^1.16.1",
+    "express-validator": "^6.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.13",
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}

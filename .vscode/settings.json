@@ -1,0 +1,14 @@
+{
+  "jshint.options": {
+    "esversion": 6
+  },
+  "jshint.enable": false,
+  "eslint.options": {
+    "parserOptions": {
+      "ecmaVersion": 2017
+    }
+  },
+  "prettier.singleQuote": true,
+"files.eol": "\n",
+"editor.tabSize": 2,
+}

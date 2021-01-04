@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "npm run dev",
+            "request": "launch",
+            "restart": true,
+            "runtimeVersion": "10.16.0",  // requires nvm
+            "runtimeExecutable": "nodemon", // if no nvm, provide full path of node executable matching version.
+            // // Below if the example if nvm is not installed.
+            // "runtimeExecutable": "${env:HOME}/.nvm/versions/node/v10.16.0/bin/node",
+            // "args": ["-r dotenv/config"],
+            "envFile": "${workspaceFolder}/.env",
+            "type": "pwa-node",
+            "program": "${workspaceFolder}/bin/www",
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "npm start",
+            "runtimeVersion": "10.16.0", // requires nvm,
+            // "args": ["-r dotenv/config"],
+            "envFile": "${workspaceFolder}/.env",
+            "runtimeExecutable": "node",
+            // // use this if nvm is not installed
+            // "runtimeExecutable": "${env:HOME}/.nvm/versions/node/v10.16.0/bin/node",
+            "program": "${workspaceFolder}/bin/www"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: assessment-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: nodejs
+    spec:
+      containers: 
+      - name: kids-tracko
+        image: hiteshsalavi/kids-tracko
+        ports:
+        - containerPort: 3000
+
